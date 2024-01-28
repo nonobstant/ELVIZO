@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-gray-200 dark:bg-gray-900 dark:text-white min-h-screen text-center pt-5 transition duration-700 ease-in-out ">
+  <div class="bg-slate-200 dark:bg-slate-900 dark:text-white min-h-screen text-center pt-5 transition duration-700 ease-in-out ">
     <div class="grid grid-cols-2 mx-auto max-w-xl my-5">
       <div>
-        <h1 class="text-base text-slate-800 font-semibold text-left"><span class="text-black font-bold text-xl dark:text-white mt-2 mx-2">Elvizo</span> Football betting tips</h1>
+        <h1 class="text-base text-slate-800 dark:text-slate-500 font-semibold text-left"><span class="text-black font-bold text-xl dark:text-white mt-2 mx-2">Elvizo</span> Football betting tips</h1>
       </div>
       <div class="text-right">
           <svg v-if='theme ==="light"'  @click="themeDark" class="w-10 h-10 inline cursor-crosshair p-2 hover:text-white hover:bg-black rounded-lg" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
