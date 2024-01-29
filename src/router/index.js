@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 //Views
 import Home from '@/views/home.vue'
 // import lab from '@/views/lab.vue'
+import Video from '@/components/video.vue'
 
 const routes = [
   {
@@ -9,11 +10,11 @@ const routes = [
     name: 'home',
     component: Home
   },
-  // {
-  //   path: '/lab',
-  //   name: 'lab',
-  //   component: lab
-  // }
+  {
+    path: '/video',
+    name: 'video',
+    component: Video
+  }
 ]
 
 // init router
