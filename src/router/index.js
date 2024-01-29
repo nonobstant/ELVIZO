@@ -11,9 +11,10 @@ const routes = [
     component: Home
   },
   {
-    path: '/video',
+    path: '/video/:index',
     name: 'video',
-    component: Video
+    component: Video,
+    props: true
   }
 ]
 
