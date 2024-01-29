@@ -8,7 +8,7 @@
             allow="autoplay; fullscreen"
             allowfullscreen
         ></iframe>
-
+        <p class="mt-6">Exemple description</p>
         <div class="ring-2 ring-black dark:ring-white bg-black dark:bg-white text-white dark:text-black h-20 mx-auto max-w-xl mt-6 w-full block text-left p-2">#AD </div>
     </div>
 </template>
