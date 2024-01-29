@@ -2,7 +2,7 @@
     <div class="mx-auto">
         <h1><span class="text-xl font-semibold">Exclusive betting tips <span class="font-mono text-base px-2 py-1 bg-slate-300 dark:bg-slate-700 rounded-lg text-black dark:text-white">{{videoID}}</span></span></h1>
         <iframe
-        class="mx-auto bg-black dark:bg-white mt-10 rounded-lg shadow-xl w-full aspect-video max-w-2xl ring-2 ring-black dark:ring-white"
+        class="mx-auto bg-black dark:bg-white mt-10 rounded-none md:rounded-lg shadow-xl w-full aspect-video max-w-2xl ring-2 ring-black dark:ring-white"
             :src="videoUrl"
             frameborder="0"
             allow="autoplay; fullscreen"
