@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-lg mx-auto">
     <div class="mt-2 px-2" v-for="(video, index) in videos" :key="index"> 
-      <h1 @click="openVideo(video.urlID)" class="grid grid-cols-2 md:grid-cols-4 gap-5 text-left bg-gray-700 dark:bg-slate-300 rounded-lg text-white dark:text-black shadow border-2 border-white hover:bg-transparent dark:hover:bg-slate-900 hover:text-black dark:hover:text-white cursor-pointer hover:border-black dark:hover:border-white w-full">
+      <h1 @click="openVideo(video.urlID)" class="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-5 text-left bg-gray-700 dark:bg-slate-300 rounded-lg text-white dark:text-black shadow border-2 border-white hover:bg-transparent dark:hover:bg-slate-900 hover:text-black dark:hover:text-white cursor-pointer hover:border-black dark:hover:border-white w-full">
         <div class="relative">
           <span class="font-mono text-base md:text-xs px-2 py-px absolute bottom-0 right-0 m-3 bg-slate-300 dark:bg-slate-700 rounded-lg text-black dark:text-white">{{ index +1 }}</span>
           <img class="rounded-l-lg h-full w-full" src="@/assets/thunmbs1.jpg" alt="">
