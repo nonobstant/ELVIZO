@@ -2,7 +2,7 @@
   <div class="bg-slate-200 dark:bg-slate-900 dark:text-white min-h-screen text-center pt-5 transition duration-700 ease-in-out ">
     <header class="grid grid-cols-4 mx-auto max-w-xl mt-5 mb-10">
       <div class="col-span-3 mx-2">
-        <h1 class="text-base text-slate-800 dark:text-slate-500 font-semibold text-left"><span @click="$router.push('/')" class="text-black hover:underline cursor-pointer font-bold text-xl dark:text-white mt-2 mx-2">Elvizo</span> Football betting tips</h1>
+        <h1 class="text-base text-slate-800 dark:text-slate-500 font-semibold text-left"><span @click="$router.push('/')" class="text-black hover:underline cursor-pointer font-bold text-xl dark:text-white mt-2 mx-2">ELVIZO</span> Football Betting Tips & Analytics</h1>
       </div>
       <div class="text-right mx-4">
           <!-- <svg  fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -21,7 +21,7 @@
     </header>
     <router-view></router-view>
     <footer>
-      <h1 class="py-3">Copyright <span class="font-mono">2024</span> © <span class="cursor-pointer hover:underline font-semibold">MatchCorner</span></h1>
+      <h1 class="py-3">Copyright <span class="font-mono">2024</span> @<a href="https://www.youtube.com/@ELVIZO" class="cursor-pointer inline hover:underline underline-offset-4 font-semibold">ELVIZO</a></h1>
     </footer>
   </div>
   

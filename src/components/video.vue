@@ -1,6 +1,6 @@
 <template>
     <div class="mx-auto">
-        <h1><span class="text-xl font-semibold">Exclusive betting tips <span class="font-mono text-base px-2 py-1 bg-slate-300 dark:bg-slate-700 rounded-lg text-black dark:text-white">{{videoID}}</span></span></h1>
+        <h1><span class="text-xl font-semibold">Football Betting Tips</span></h1>
         <iframe
         class="mx-auto bg-black dark:bg-white mt-10 rounded-none md:rounded-lg shadow-xl w-full aspect-video max-w-2xl ring-2 ring-black dark:ring-white"
             :src="videoUrl"
@@ -16,15 +16,14 @@
 <script>
 export default {
     props: {
-        index: {
-            type: Number,
+        urlID: {
+            type: String,
             required: true
         }
     },
     data() {
         return {
-            videoUrl: "",
-            videoID: Number(this.index) + 1
+            videoUrl: "https://player.vimeo.com/video/"+this.urlID,
         };
     }
 };
