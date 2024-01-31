@@ -35,7 +35,7 @@ export default {
       this.$router.push(`/video/${uuid}`);
     },
     getThumbnail(video) {
-    return '/public/' + video.thumbnail;
+    return '/' + video.thumbnail;
   }
   }
 }
