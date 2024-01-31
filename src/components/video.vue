@@ -4,6 +4,7 @@
         <iframe
         class="mx-auto bg-black dark:bg-white mt-10 rounded-none md:rounded-lg shadow-xl w-full aspect-video max-w-2xl ring-2 ring-black dark:ring-white"
             :src="videoUrl"
+            :title="video.description"
             frameborder="0"
             allow="autoplay; fullscreen"
             allowfullscreen
