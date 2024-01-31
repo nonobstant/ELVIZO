@@ -1,6 +1,6 @@
 <template>
     <div class="mx-auto">
-        <h1><span class="text-xl font-semibold">Football Betting Tips</span></h1>
+        <h1><span class="text-xl font-semibold">{{ video.title }}</span></h1>
         <iframe
         class="mx-auto bg-black dark:bg-white mt-10 rounded-none md:rounded-lg shadow-xl w-full aspect-video max-w-2xl ring-2 ring-black dark:ring-white"
             :src="videoUrl"
@@ -8,27 +8,31 @@
             allow="autoplay; fullscreen"
             allowfullscreen
         ></iframe>
-        <p class="mt-6">EPL, LaLiga</p>
-        <!-- <div class="ring-2 ring-black dark:ring-white bg-black dark:bg-white text-white dark:text-black h-20 mx-auto max-w-xl mt-6 w-full block text-left p-2">#AD </div> -->
+        <p class="mt-6">{{ video.description }}</p>
+        <p class="mt-6">{{ video.date }}</p>
     </div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
     props: {
-        urlID: {
+        uuid: {
             type: String,
             required: true
         }
     },
-    data() {
-        return {
-            videoUrl: "https://player.vimeo.com/video/"+this.urlID,
-        };
+    computed: {
+        ...mapState({
+            videos: state => state.videos
+        }),
+        video() {
+            return this.videos.find(video => video.uuid === this.uuid);
+        },
+        videoUrl() {
+            return "https://player.vimeo.com/video/"+this.uuid;
+        }
     }
 };
 </script>
-
-<style>
-/* Add any custom styles here */
-</style>

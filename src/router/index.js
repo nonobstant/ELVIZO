@@ -11,7 +11,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/video/:urlID',
+    path: '/video/:uuid',
     name: 'video',
     component: Video,
     props: true
