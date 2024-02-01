@@ -8,7 +8,7 @@ export default createStore({
                 title: "Betting Tips",
                 description: "Serie A, LaLiga",
                 thumbnail: "thmb3.jpg",
-                date: "01/02",
+                date: "02/02",
             },
             {
                 uuid: "908237387",
