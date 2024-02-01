@@ -4,6 +4,13 @@ export default createStore({
     state: {
         videos: [
             {
+                uuid: "908666985",
+                title: "Betting Tips",
+                description: "Serie A, LaLiga",
+                thumbnail: "thmb3.jpg",
+                date: "01/02",
+            },
+            {
                 uuid: "908237387",
                 title: "Betting Tips",
                 description: "EPL, ProLeague",

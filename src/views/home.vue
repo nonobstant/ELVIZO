@@ -12,7 +12,7 @@
           <p class="font-serif my-2 ml-3">{{ video.description }}</p>
         </div>
       </h1>
-      <div v-if="index < 1" class="flex justify-between my-6">
+      <div v-if="index == 1" class="flex justify-between my-6">
         <p class="px-2 rounded-lg py-1 border-4 border-slate-800 dark:border-slate-200 hover:bg-slate-800 cursor-pointer hover:text-slate-200 dark:hover:bg-slate-200 dark:hover:text-slate-800">BONUS: <span class="font-mono font-semibold">ELVIZO</span></p>
         <p class="px-2 rounded-lg font-semibold py-1 border-4 border-slate-800 dark:border-slate-200 hover:bg-slate-800 cursor-pointer hover:text-slate-200 dark:hover:bg-slate-200 dark:hover:text-slate-800">OVER ONE GOAL BET</p>
       </div>
