@@ -4,26 +4,26 @@ export default createStore({
     state: {
         videos: [
             {
+                uuid: "910071335",
+                title: "Betting Tips",
+                description: "Bundesliga, AFCON",
+                thumbnail: "thmb1.jpg",
+                date: "07/02",
+            },
+            {
+                uuid: "909699678",
+                title: "Betting Tips",
+                description: "Serie A, LaLiga",
+                thumbnail: "thmb2.jpg",
+                date: "05/02",
+            },
+            {
                 uuid: "908666985",
                 title: "Betting Tips",
                 description: "Serie A, LaLiga",
                 thumbnail: "thmb3.jpg",
                 date: "02/02",
             },
-            {
-                uuid: "908237387",
-                title: "Betting Tips",
-                description: "EPL, ProLeague",
-                thumbnail: "thmb2.jpg",
-                date: "01/02",
-            },
-            {
-                uuid: "907940105",
-                title: "Betting Tips",
-                description: "EPL, LaLiga",
-                thumbnail: "thmb1.jpg",
-                date: "31/01",
-            }
         ]
     },
     mutations: {
