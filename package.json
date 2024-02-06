@@ -10,8 +10,6 @@
     "axios": "^1.6.7",
     "socket.io-client": "^4.5.0",
     "vue": "^3.2.25",
-    "vue-adsense": "^1.0.1",
-    "vue-meta": "^2.4.0",
     "vue-router": "4",
     "vuex": "^4.1.0"
   },

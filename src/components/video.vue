@@ -11,12 +11,10 @@
         ></iframe>
         <p class="mt-6">{{ video.description }}</p>
         <p class="mt-6">{{ video.date }}</p>
-        <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-6437061319663341"
-         data-ad-slot="6863062259"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
+
+        <div class="ad">
+        <!-- AdSense slot -->
+        </div>
     </div>
 </template>
 
@@ -24,26 +22,6 @@
 import { mapState } from 'vuex';
 
 export default {
-    metaInfo: {
-      script: [
-        {
-          src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6437061319663341',
-          async: true,
-          crossorigin: 'anonymous'
-        },
-        {
-          innerHTML: '(adsbygoogle = window.adsbygoogle || []).push({});',
-          type: 'text/javascript',
-          charset: 'utf-8'
-        }
-      ],
-      __dangerouslyDisableSanitizersByTagID: {
-        'adsense-script': ['innerHTML']
-      }
-    },
-    mounted() {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    },
     props: {
         uuid: {
             type: String,
@@ -60,6 +38,28 @@ export default {
         videoUrl() {
             return "https://player.vimeo.com/video/"+this.uuid;
         }
+    },
+    mounted() {
+    this.insertAd();
+    },
+    methods: {
+      insertAd() {
+        // Ensure global adsbygoogle array exists
+        window.adsbygoogle = window.adsbygoogle || [];
+        
+        const adElement = document.createElement('ins');
+        adElement.className = 'adsbygoogle';
+        adElement.style.display = 'block';
+        adElement.setAttribute('data-ad-client', 'ca-pub-6437061319663341');
+        adElement.setAttribute('data-ad-slot', '6863062259');
+        adElement.setAttribute('data-ad-format', 'auto');
+        adElement.setAttribute('data-full-width-responsive', 'true');
+        
+        this.$el.appendChild(adElement);
+        
+        // Request AdSense to display the ad
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      }
     }
 };
 </script>
