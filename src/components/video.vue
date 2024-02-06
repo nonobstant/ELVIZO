@@ -11,10 +11,12 @@
         ></iframe>
         <p class="mt-6">{{ video.description }}</p>
         <p class="mt-6">{{ video.date }}</p>
-        <Adsense
-            data-ad-client="ca-pub-6437061319663341"
-            data-ad-slot="6863062259">
-        </Adsense>
+        <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6437061319663341"
+         data-ad-slot="6863062259"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
     </div>
 </template>
 
@@ -22,6 +24,26 @@
 import { mapState } from 'vuex';
 
 export default {
+    metaInfo: {
+      script: [
+        {
+          src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6437061319663341',
+          async: true,
+          crossorigin: 'anonymous'
+        },
+        {
+          innerHTML: '(adsbygoogle = window.adsbygoogle || []).push({});',
+          type: 'text/javascript',
+          charset: 'utf-8'
+        }
+      ],
+      __dangerouslyDisableSanitizersByTagID: {
+        'adsense-script': ['innerHTML']
+      }
+    },
+    mounted() {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    },
     props: {
         uuid: {
             type: String,
