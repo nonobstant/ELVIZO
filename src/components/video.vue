@@ -11,6 +11,10 @@
         ></iframe>
         <p class="mt-6">{{ video.description }}</p>
         <p class="mt-6">{{ video.date }}</p>
+        <Adsense
+            data-ad-client="ca-pub-6437061319663341"
+            data-ad-slot="6863062259">
+        </Adsense>
     </div>
 </template>
 
